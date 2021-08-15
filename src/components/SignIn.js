@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useDispatch, useSelector } from 'react-redux'
-import { signIn } from './features/authedUser/authedUserSlice';
+import { signIn } from '../features/authedUser/authedUserSlice';
 import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
