@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SignIn from './SignIn';
-import Home from './Home';
-import PrivateRoute from './PrivateRoute'
+import SignIn from './components/SignIn';
+import Home from './components/Home';
+import PrivateRoute from './components/PrivateRoute'
 import { useSelector } from 'react-redux'
 
 const App = () => {
