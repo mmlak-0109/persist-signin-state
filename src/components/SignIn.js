@@ -1,7 +1,6 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
@@ -13,13 +12,14 @@ import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(10),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   avatar: {
-    margin: theme.spacing(1),
+    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
@@ -54,8 +54,10 @@ export default function SignIn() {
 
   return (
     <Container component="main" maxWidth="xs">
-      <CssBaseline />
       <div className={classes.paper}>
+        <Typography variant='h5'>
+          React State Persistance Demo
+        </Typography>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
@@ -76,7 +78,7 @@ export default function SignIn() {
             onChange={handleChange}
           />
           <Typography variant='caption'>
-            *Type in any username you like and press submit.
+            *Type in any username you like and press sign in.
           </Typography>
           <Button
             type="submit"
