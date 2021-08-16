@@ -75,6 +75,9 @@ export default function SignIn() {
             autoFocus
             onChange={handleChange}
           />
+          <Typography variant='caption'>
+            *Type in any username you like and press submit.
+          </Typography>
           <Button
             type="submit"
             fullWidth
